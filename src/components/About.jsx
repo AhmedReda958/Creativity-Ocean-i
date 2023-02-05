@@ -18,7 +18,7 @@ const About = () => {
             Chemicals. We started in consultations field more than 10 years ago
             then we expanded our scope into the distribution business.
           </p>
-          <p data-aos="fade-left">
+          <p data-aos="fade-right">
             Our Client list include, Pharmaceutical industries, medical devices
             industries, food manufacturers, laboratories, gas and oil companies,
             construction companies, universities, hospitals, pharmacy chains,
