@@ -4,7 +4,12 @@
   overflow: hidden;
   video {
     width: 100%;
+    height: auto;
     @include media-breakpoint-down(md) {
+      height: 100%;
+      width: auto;
+    }
+    @media (orientation: portrait) {
       height: 100%;
       width: auto;
     }
