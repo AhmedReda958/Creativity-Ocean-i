@@ -1,0 +1,16 @@
+@import "./variables";
+
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 3.4;
+$h2-font-size: $font-size-base * 3;
+$h3-font-size: $font-size-base * 2.4;
+$h4-font-size: $font-size-base * 2.25;
+$h5-font-size: $font-size-base * 2;
+$h6-font-size: $font-size-base * 1.5;
+$theme-colors: (
+  "primary": $main-color,
+  "secondary": $alt-color,
+  "dark": $main-bg-color,
+  "light": $alt-bg-color,
+);
+@import "~bootstrap/scss/bootstrap";

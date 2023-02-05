@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: $main-font-color;
+}
+p {
+  font-size: 1.2rem;
+  opacity: 70%;
+}
+
+.heading {
+  color: $main-color;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  svg {
+    padding-right: 8px;
+    padding-bottom: 5px;
+  }
+}
+
+.heading2 {
+  font-size: 72px;
+  background: -webkit-linear-gradient($alt-color, $main-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,40 @@
+.ourmission {
+  padding: $section-padding 0;
+  background-color: $alt-bg-color;
+  .mission,
+  .vision {
+    .row {
+      display: flex;
+      align-items: center;
+    }
+    .content {
+      h3 {
+        color: $main-color;
+        margin-bottom: 1rem;
+        font-weight: bold;
+      }
+      p {
+        max-width: 620px;
+      }
+    }
+    img {
+      width: 100%;
+    }
+    @include media-breakpoint-down(md) {
+      .content {
+        text-align: center;
+      }
+      img {
+        display: none;
+      }
+    }
+  }
+
+  .vision {
+    .content {
+      @include media-breakpoint-up(md) {
+        padding-left: 2rem;
+      }
+    }
+  }
+}

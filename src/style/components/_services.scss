@@ -1,0 +1,93 @@
+.services {
+  padding: $section-padding 0;
+  h2 {
+    margin-bottom: 1rem;
+  }
+  .serv {
+    padding: $sub-section-padding 0;
+    .row {
+      @include media-breakpoint-down(md) {
+        flex-direction: column-reverse;
+        .image {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+    .image {
+      position: relative;
+      overflow: hidden;
+      padding: 14px;
+      background-color: $main-color;
+      background: linear-gradient(209deg, $main-color 0%, $alt-color 100%);
+      img {
+        width: 100%;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 3px solid white;
+        top: -40px;
+        left: -40px;
+      }
+    }
+
+    &:nth-of-type(3) {
+      background: $alt-bg-color;
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+      }
+    }
+  }
+}
+@import "react-responsive-carousel/lib/styles/carousel.min.css";
+.services-slider {
+  padding-top: $section-padding;
+  padding-bottom: $sub-section-padding;
+  background-color: $alt-bg-color;
+  .service {
+    > .row {
+      @include media-breakpoint-down(md) {
+        flex-direction: column-reverse;
+        .image {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+    .content {
+      text-align: start;
+      h6 {
+        color: $main-color;
+      }
+      ol {
+        > li {
+          margin-bottom: 8px;
+          list-style: decimal-leading-zero;
+          &::marker {
+            color: $main-color;
+            font-weight: bold;
+          }
+        }
+      }
+      ul {
+        > li {
+          list-style: circle;
+          opacity: 70%;
+          &::marker {
+            color: $alt-color;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .image {
+      background-color: $main-color;
+      padding: 15px;
+      // padding-right: 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.advantages {
+  padding: $section-padding 0;
+
+  .content {
+    li {
+      padding: 8px 0;
+      font-size: 18px;
+      font-weight: 500;
+
+      &::marker {
+        color: $alt-color;
+      }
+    }
+  }
+  .image {
+    display: flex;
+    img {
+      width: 100%;
+      height: fit-content;
+    }
+  }
+}
