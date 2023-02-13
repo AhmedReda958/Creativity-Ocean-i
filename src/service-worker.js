@@ -88,7 +88,7 @@ self.addEventListener("install", (event) => {
 });
 
 self.addEventListener("activate", (event) => {
-  event.waitUntil(clients.claim());
+  event.waitUntil(clientsClaim());
 });
 
 self.addEventListener("fetch", (event) => {
