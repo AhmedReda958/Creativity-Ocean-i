@@ -1,29 +1,41 @@
-import Header from "components/Header";
-import Advantages from "components/Advantages";
-import Hero from "components/Hero";
-import Mission from "components/MIssion";
-import Services from "components/Services";
 import "./style/app.scss";
-import About from "components/About";
-import Location from "components/location";
-import Partners from "components/Partners";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import Layout from "pages/Layout";
+import Home from "pages/Home";
+
+import Services from "components/Services";
 import ServicesSlider from "components/ServicesSlider";
 import ReachUs from "components/ReachUs";
 
 function App() {
+  const routes = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        { index: true, element: <Home /> },
+        {
+          path: "/contact",
+          element: <ReachUs />,
+        },
+        {
+          path: "/services",
+          element: (
+            <>
+              <Services />
+              <ServicesSlider />
+            </>
+          ),
+        },
+      ],
+    },
+  ]);
+
   return (
-    <div className="App">
-      <Header />
-      <Hero />
-      <About />
-      <Location />
-      <Services />
-      <ServicesSlider />
-      <Advantages />
-      <Mission />
-      <Partners />
-      <ReachUs />
-    </div>
+    <>
+      <RouterProvider router={routes} />
+    </>
   );
 }
 

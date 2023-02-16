@@ -1,42 +1,39 @@
 import React from "react";
 import "./style.scss";
 import logo from "assets/images/logo-small.png";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className="navbar navbar-expand-md shadow-sm sticky-top">
       <div className="container bg-white">
-        <a href="/" className="navbar-brand logo">
+        <NavLink to="/" className="navbar-brand logo">
           <img src={logo} alt="" height="50" />
-        </a>
+        </NavLink>
         <button
           className="navbar-toggler border-0"
           data-bs-toggle="collapse"
-          data-bs-target="#navbar"
+          data-bs-target="navbar"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse text-center " id="navbar">
           <ul className="navbar-nav ms-auto">
             <li className="nav-link">
-              <a href="#about-us" className="nav-link active">
-                About Us
-              </a>
+              <NavLink to="/" className="nav-link">
+                Home
+              </NavLink>
             </li>
             <li className="nav-link">
-              <a href="#services" className="nav-link">
+              <NavLink to="services" className="nav-link">
                 Our Services
-              </a>
+              </NavLink>
             </li>
+
             <li className="nav-link">
-              <a href="#advantages" className="nav-link">
-                Our Advantages
-              </a>
-            </li>
-            <li className="nav-link">
-              <a href="#contact-us" className="nav-link">
+              <NavLink to="contact" className="nav-link">
                 Contact Us
-              </a>
+              </NavLink>
             </li>
           </ul>
         </div>
