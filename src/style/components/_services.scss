@@ -43,12 +43,13 @@
     }
   }
 }
-@import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 .services-slider {
-  padding-top: $section-padding;
-  padding-bottom: $sub-section-padding;
+  padding: $section-padding 0;
   background-color: $alt-bg-color;
   .service {
+    padding-top: $sub-section-padding;
+    padding-bottom: $sub-section-padding;
     > .row {
       @include media-breakpoint-down(md) {
         flex-direction: column-reverse;
@@ -89,6 +90,17 @@
       // padding-right: 0;
       img {
         width: 100%;
+      }
+    }
+
+    &:nth-of-type(2) {
+      .row {
+        @include media-breakpoint-down(md) {
+          flex-direction: column;
+        }
+        .content {
+          padding-left: 1rem;
+        }
       }
     }
   }

@@ -1,14 +1,12 @@
 import React from "react";
-// import image1 from "assets/images/services-1.jpg";
-// import image2 from "assets/images/services-2.jpg";
-// import image3 from "assets/images/services-3.jpg";
+import { Link } from "react-router-dom";
+
+import { FaArrowRight } from "react-icons/fa";
 
 const About = () => {
   return (
     <div className="about" id="about-us">
       <div className="container">
-        {/* <div className="row">
-          <div className="col-12 col-md-6"> */}
         <div className="content">
           <h3>About Us</h3>
           <p data-aos="fade-right">
@@ -29,19 +27,16 @@ const About = () => {
             need and facilitate their businesses and by delivering quality,
             service, trust and reliability to our clients
           </p>
-          {/* </div> */}
-          {/* </div> */}
-          {/* <div className="gallary col-12 col-md-6">
-            <div className="row">
-              <div className="col-8">
-                <img src={image1} alt="about us" />
-              </div>
-              <div className="col-4">
-                <img src={image2} alt="about us" className="mb-3" />
-                <img src={image3} alt="about us" />
-              </div>
-            </div>
-          </div> */}
+          <div className="d-flex justify-content-center">
+            <Link
+              to="/services"
+              className="btn btn-primary btn-lg  my-5"
+              data-aos="fade-up"
+            >
+              Our Services
+              <FaArrowRight className="ms-3" data-aos="fade-right" />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

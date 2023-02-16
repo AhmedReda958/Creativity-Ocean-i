@@ -13,7 +13,7 @@ const Header = () => {
         <button
           className="navbar-toggler border-0"
           data-bs-toggle="collapse"
-          data-bs-target="navbar"
+          data-bs-target="#navbar"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -29,7 +29,6 @@ const Header = () => {
                 Our Services
               </NavLink>
             </li>
-
             <li className="nav-link">
               <NavLink to="contact" className="nav-link">
                 Contact Us

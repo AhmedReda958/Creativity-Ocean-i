@@ -1,32 +1,20 @@
 import React from "react";
-import { Carousel } from "react-responsive-carousel";
 
 import image1 from "assets/images/services-slider-1.jpg";
 import image2 from "assets/images/services-slider-2.jpg";
 import image3 from "assets/images/services-slider-3.jpg";
+import { Link } from "react-router-dom";
+import { FaPaperPlane } from "react-icons/fa";
 
 const ServicesSlider = () => {
   return (
     <div className="services-slider">
       <div className="container">
-        {/* <Carousel
-          autoPlay
-          infiniteLoop
-          swipeable
-          //   showStatus={false}
-          showIndicators={false}
-          showThumbs={false}
-          interval={5000}
-          emulateTouch
-          stopOnHover
-          preventMovementUntilSwipeScrollTolerance
-          useKeyboardArrows
-        > */}
+        <h3>Our distribution services include:</h3>
         <div className="service">
           <div className="row">
-            <div className="col-12 col-md-6">
-              <div className="content">
-                <h6>Our distribution services include:</h6>
+            <div className="col-12 col-md-7">
+              <div className="content" data-aos="fade-right">
                 <ol>
                   <li>
                     Laboratory instruments and consumables for different fields:
@@ -52,18 +40,22 @@ const ServicesSlider = () => {
                 </ol>
               </div>
             </div>
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-md-5">
               <div className="image">
-                <img src={image1} alt="service" />
+                <img src={image1} alt="service" data-aos="fade-up" />
               </div>
             </div>
           </div>
         </div>
         <div className="service">
           <div className="row">
-            <div className="col-12 col-md-6">
-              <div className="content">
-                <h6>Our distribution services include:</h6>
+            <div className="col-12 col-md-5">
+              <div className="image">
+                <img src={image2} alt="service" data-aos="fade-up" />
+              </div>
+            </div>
+            <div className="col-12 col-md-7">
+              <div className="content" data-aos="fade-right">
                 <ol start={6}>
                   <li> Electrical Tools & Equipment.</li>
                   <li>Laboratory furniture.</li>
@@ -80,12 +72,8 @@ const ServicesSlider = () => {
                     Packaging materials for pharmaceutical and
                     foodmanufacturers.
                   </li>
+                  <li>Providing IT solutions and services</li>
                 </ol>
-              </div>
-            </div>
-            <div className="col-12 col-md-6">
-              <div className="image">
-                <img src={image2} alt="service" />
               </div>
             </div>
           </div>
@@ -93,11 +81,9 @@ const ServicesSlider = () => {
 
         <div className="service">
           <div className="row">
-            <div className="col-12 col-md-6">
-              <div className="content">
-                <h6>Our distribution services include:</h6>
-                <ol start={14}>
-                  <li>Providing IT solutions and services</li>
+            <div className="col-12 col-md-7">
+              <div className="content" data-aos="fade-right">
+                <ol start={15}>
                   <li>
                     Support Pharmaceutical companies to implement Pharma 4.0
                     (Digitalization of Pharmaceutical industry)
@@ -127,14 +113,20 @@ const ServicesSlider = () => {
                 </ol>
               </div>
             </div>
-            <div className="col-12 col-md-6">
+            <div className="col-12 col-md-5">
               <div className="image">
-                <img src={image3} alt="service" />
+                <img src={image3} alt="service" data-aos="fade-up" />
               </div>
             </div>
           </div>
         </div>
-        {/* </Carousel> */}
+        {/* call to action link */}
+        <div className="d-flex justify-content-center">
+          <Link to="/contact" className="btn btn-primary btn-lg  my-5">
+            Contact US
+            <FaPaperPlane className="ms-3" />
+          </Link>
+        </div>
       </div>
     </div>
   );
