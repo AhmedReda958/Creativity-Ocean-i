@@ -8,7 +8,7 @@ import image6 from "assets/images/partner-6.png";
 
 const Partners = () => {
   return (
-    <div className="partners ">
+    <div className="partners " id="our-partners">
       <div className="container">
         <div className="heading">
           <h4>Our Sucess Partners</h4>

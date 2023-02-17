@@ -5,9 +5,9 @@ import { FiMail } from "react-icons/fi";
 const ContactForm = () => {
   return (
     <form
-      action="mailto:asateralcomedi123@gmail.com"
+      action="mailto:info@creativity-ocean.com"
       method="POST"
-      enctype="multipart/form-data"
+      encType="multipart/form-data"
       name="EmailForm"
     >
       <div className="row row-cols-2">
@@ -74,7 +74,9 @@ const ReachUs = () => {
         {/* contact from */}
         <div className="row">
           <div className="col-12 col-md-6">
-            <h5 className="mb-3">Drop as a line</h5>
+            <h6 className="mb-3">
+              For any informaion or to order <br /> please fill the form below
+            </h6>
             <ContactForm />
           </div>
           <div className="col-12 col-md-6">
@@ -133,6 +135,12 @@ const ReachUs = () => {
                   <a href="tel:+966544553730">
                     <FaPhone />
                     +966-544553730
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:diaa@creativity-ocean.com">
+                    <FiMail />
+                    diaa@creativity-ocean.com
                   </a>
                 </li>
                 <li>Diaa Badra</li>
