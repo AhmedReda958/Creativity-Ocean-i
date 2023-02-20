@@ -131,19 +131,15 @@ const ReachUs = () => {
                   </a>
                 </li>
                 <li>Fakhraldeen Mohammed</li>
+              </ul>
+              <h6>All other local or international sales:</h6>
+              <ul>
                 <li>
-                  <a href="tel:+966544553730">
-                    <FaPhone />
-                    +966-544553730
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:diaa@creativity-ocean.com">
+                  <a href="mailto:Sales@creativity-ocean.com">
                     <FiMail />
-                    diaa@creativity-ocean.com
+                    Sales@creativity-ocean.com
                   </a>
                 </li>
-                <li>Diaa Badra</li>
               </ul>
             </div>
             <div className="col-12 col-sm-12 col-md ">
@@ -163,15 +159,6 @@ const ReachUs = () => {
                   </a>
                 </li>
                 <li>Mohammed Haleem</li>
-              </ul>
-              <h6>All other local or international sales:</h6>
-              <ul>
-                <li>
-                  <a href="mailto:Sales@creativity-ocean.com">
-                    <FiMail />
-                    Sales@creativity-ocean.com
-                  </a>
-                </li>
               </ul>
             </div>
           </div>
