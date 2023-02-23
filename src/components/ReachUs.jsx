@@ -15,7 +15,7 @@ const ContactForm = () => {
           <input
             type="text"
             className="form-control mb-3"
-            nam="first name"
+            name="first name"
             placeholder="Frist Name"
           />
         </div>
