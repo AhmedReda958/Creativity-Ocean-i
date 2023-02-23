@@ -4,9 +4,9 @@ import image2 from "assets/images/services-2.jpg";
 import image3 from "assets/images/services-3.jpg";
 const Services = () => {
   return (
-    <div className="services" id="services">
+    <div className="services">
       <div className="heading2 text-center" data-aos="fade-down">
-        <h2>Our Services</h2>
+        <h2 id="services">Our Services</h2>
       </div>
       <div className="serv">
         <div className="container">

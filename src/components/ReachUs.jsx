@@ -81,7 +81,7 @@ const ReachUs = () => {
           </div>
           <div className="col-12 col-md-6">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3047.3381907870757!2d46.64872932665524!3d24.729755063957302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s7120%20Takhassusi%20Street%2C%20northern%20Mother!5e0!3m2!1sen!2seg!4v1675544033396!5m2!1sen!2seg"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3625.2149994968463!2d46.67281441499942!3d24.685134884136957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDQxJzA2LjUiTiA0NsKwNDAnMzAuMCJF!5e0!3m2!1sen!2seg!4v1677155664459!5m2!1sen!2seg"
               width="100%"
               height="350"
               // style="border:0;"
@@ -135,7 +135,7 @@ const ReachUs = () => {
               <h6>All other local or international sales:</h6>
               <ul>
                 <li>
-                  <a href="mailto:Sales@creativity-ocean.com">
+                  <a href="mailto:sales@creativity-ocean.com">
                     <FiMail />
                     Sales@creativity-ocean.com
                   </a>
@@ -155,7 +155,7 @@ const ReachUs = () => {
                 <li>
                   <a href="mailto:Sales1@creativity-ocean.com">
                     <FiMail />
-                    Sales@creativity-ocean.com
+                    Sales1@creativity-ocean.com
                   </a>
                 </li>
                 <li>Mohammed Haleem</li>
